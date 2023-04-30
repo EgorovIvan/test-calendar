@@ -50,8 +50,8 @@ function App() {
     // запрос данных по задачам активного дня (ругается на CORS - необходимо отключать)
     function getTask() {
         // url для работы с json-server
-        let url = 'http://localhost:3000/task/?id>' + (activeDate.getTime() - 1) +
-            '&id<' + (activeDate.getTime() + countOfMillisecondsInDay)
+        // let url = 'http://localhost:3000/task/?id>' + (activeDate.getTime() - 1) +
+        //     '&id<' + (activeDate.getTime() + countOfMillisecondsInDay)
         fetch('testapi/task.json')
             .then((response) => response.json())
             .then((json) => {

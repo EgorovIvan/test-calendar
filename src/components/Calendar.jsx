@@ -298,7 +298,7 @@ const Calendar = ({getTask,
 
     useEffect(() => {
         selectedDay(dayId);
-    }, [setDayId, dayId])
+    }, [dayId])
 
     return (
         <Wrapper>
