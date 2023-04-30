@@ -5,8 +5,8 @@ const Wrapper = styled.section`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    max-width: 740px;
+    height: 1314px;
     background-color: rgba(0,0,0, 0.4);
     z-index: 15;
     box-sizing: border-box;
@@ -15,13 +15,14 @@ const Wrapper = styled.section`
 const Modal = styled.div`
     position: fixed;
     gap: 1px;
-    width: 625px;
+    max-width: 84.5%;
     height: 415px;
     left: 50%;
     top: 450px;
     transform: translate(-50%, -50%);
     border-radius: 40px;
     background-color: #e6e6e7;
+    box-sizing: border-box;
     opacity: 1;
     overflow: hidden;
     z-index: 120;
@@ -58,7 +59,7 @@ const Text = styled.div`
 `;
 
 const Input = styled.input`
-    width: 550px;
+    width: 88%;
     height: 58px;
     margin: 45px 0 27px 0;
     box-sizing: border-box;
